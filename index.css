@@ -1,0 +1,231 @@
+/* -----------------------------RESET----------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -----------------------------GENERAL STYLING----------------------------- */
+
+:root {
+  --color-light: #fff;
+  --color-dark: #1c1415;
+  /* CONTAINER */
+  --container-width-sm: 95%;
+  --container-width-md: 90%;
+  --container-width-xl: 80%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  font: inherit;
+}
+
+#root {
+  padding: 20px 0;
+}
+/* -----------------------------MEDIA QUERIES----------------------------- */
+.container {
+  width: var(--container-width-sm);
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/* -----------------------------HEADER STYLING----------------------------- */
+.logo {
+  height: 51px;
+  width: 123px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.signup-btn {
+  padding: 14px 38px 14px 38px;
+  background-color: var(--color-dark);
+  border-radius: 50px;
+  color: var(--color-light);
+}
+
+/* -----------------------------BANNER STYLING----------------------------- */
+.product-bg-container {
+  padding: 20px 0;
+}
+
+.product-bg-container h2 {
+  font-family: "Sofia Sans";
+  font-size: 2rem;
+  color: var(--color-light);
+}
+
+.product-bg-container h3 {
+  font-size: 1.5rem;
+  color: var(--color-light);
+}
+
+.product-bg-container p {
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.product-bg-container .price {
+  font-size: 2rem;
+  color: var(--color-light);
+}
+
+@media screen and (min-width: 750px) {
+  .product-bg-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .product-details-container {
+    max-width: 60%;
+  }
+
+  .product-bg-container h2 {
+    font-size: 70px;
+  }
+
+  .product-bg-container h3 {
+    font-size: 40px;
+  }
+
+  .product-bg-container p {
+    font-size: 24px;
+  }
+
+  .product-bg-container .price {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .product-bg-container {
+    display: flex;
+    gap: 12px;
+  }
+
+  .product-details-container {
+    max-width: 60%;
+  }
+
+  .product-bg-container h2 {
+    font-size: 76px;
+  }
+
+  .product-bg-container h3 {
+    font-size: 52px;
+  }
+
+  .product-bg-container p {
+    font-size: 24px;
+  }
+
+  .product-bg-container .price {
+    font-size: 70px;
+  }
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-icon {
+  background-color: transparent;
+  border: 1px solid var(--color-light);
+  border-radius: 50%;
+  font-size: 27px;
+  height: 60px;
+  width: 60px;
+  color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----------------------------SPLIDE----------------------------- */
+.splide-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#splide {
+  width: 80%;
+}
+
+.splide__li {
+  display: flex;
+  justify-content: center;
+}
+.splide-img {
+  width: 90%;
+  max-width: 499px !;
+  max-height: 619px;
+}
+
+#splidePrevBtn,
+#splideNextBtn {
+  background-color: transparent;
+  border: 2px solid var(--color-light);
+  color: var(--color-light);
+  border-radius: 50%;
+  padding: 5px;
+}
+@media screen and (min-width: 750px) {
+  .splide-container {
+    max-width: 30%;
+  }
+  #splide {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .splide-container {
+    max-width: 40%;
+  }
+}
